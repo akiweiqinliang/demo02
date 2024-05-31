@@ -23,7 +23,7 @@ class _QuestionPageState extends State<QuestionPage> {
       style: TextButton.styleFrom(padding: const EdgeInsets.all(0.0)),
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.black26,
+            color: GlobalConfig.cardBackgroundColor,
             border: BorderDirectional(
                 bottom: BorderSide(
                     color:
@@ -83,7 +83,7 @@ class _QuestionPageState extends State<QuestionPage> {
                       child: const Text('物理学'),
                       style: TextButton.styleFrom(
                         padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                        primary: Colors.white,
+                        primary: GlobalConfig.fontColor2,
                       ),
                     ), 
                     color: GlobalConfig.searchBackgroundColor,
@@ -96,7 +96,7 @@ class _QuestionPageState extends State<QuestionPage> {
                       child: const Text('三体（书籍）'),
                       style: TextButton.styleFrom(
                         padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                        primary: Colors.white,
+                        primary: GlobalConfig.fontColor2,
                       ),
                     ), 
                     color: GlobalConfig.searchBackgroundColor,
@@ -109,7 +109,7 @@ class _QuestionPageState extends State<QuestionPage> {
                       child: const Text('脑洞（网络用语）'),
                       style: TextButton.styleFrom(
                         padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                        primary: Colors.white,
+                        primary: GlobalConfig.fontColor2,
                       ),
                     ), 
                     color: GlobalConfig.searchBackgroundColor,
@@ -127,6 +127,7 @@ class _QuestionPageState extends State<QuestionPage> {
                   '《三体》里的水滴有可能被制造出来吗?',
                   style: TextStyle(
                       fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
                       color: GlobalConfig.dark ? Colors.white70 : Colors.black),
                 )),
             Container(

@@ -17,7 +17,7 @@ class _NoticePageState extends State<NoticePage> {
         centerTitle: true,
         automaticallyImplyLeading: false,
         leading: IconButton(onPressed: () {
-                // Navigator.pop(context);
+                Navigator.pop(context);
               }, icon: Icon(Icons.arrow_back_ios, color: GlobalConfig.dark ? Colors.white : Colors.black,)),
         title: const Center(child: Text('消息')),
         actions: [
@@ -190,7 +190,7 @@ class CustomIconCard extends StatelessWidget {
                 borderRadius: BorderRadius.all(Radius.circular(30.0))
               ),
               padding: const EdgeInsets.only(left:8.0, right: 8.0, top: 2.0, bottom: 2.0),
-              child: Text(bubbleCount <= 99 ? '$bubbleCount' : '99+', style: const TextStyle(fontSize: 12.0),)
+              child: Text(bubbleCount <= 99 ? '$bubbleCount' : '99+', style: const TextStyle(fontSize: 12.0, color: Colors.white),)
               )
             : Text(time, style: const TextStyle(fontSize: 10.0, color: Colors.white54), overflow: TextOverflow.ellipsis, maxLines: 1,),
         leading: CircleAvatar(
@@ -223,9 +223,9 @@ class CustomTextBtn extends StatelessWidget {
       child: SizedBox(
         child: Column(
           children: [
-            Icon(icon, size: 32.0,),
+            Icon(icon, size: 32.0,color: GlobalConfig.fontColor1,),
             const SizedBox(height: 8.0,),
-            Text(buttonText)
+            Text(buttonText, style: TextStyle(color: GlobalConfig.fontColor1,),)
           ],
         ),
       )
