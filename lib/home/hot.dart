@@ -77,7 +77,7 @@ class HotCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(question.title, style: const TextStyle(color: Colors.white70)),
+                    Text(question.title, style: TextStyle(color: GlobalConfig.dark ? Colors.white : Colors.black)),
                     Text(question.mark ?? '', style: TextStyle(color: GlobalConfig.fontColor),),
                     Text(question.hotNum, style: TextStyle(color: GlobalConfig.fontColor)),
                   ],

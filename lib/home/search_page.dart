@@ -13,7 +13,6 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         title: Row(
           children: [
@@ -97,7 +96,7 @@ class _SearchPageState extends State<SearchPage> {
                           '$index网传「歌手」补位歌手是谁aaaaaaaaaaaaaaaaaaaaa',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(color: GlobalConfig.secondFontColor),
+                          style: TextStyle(color: GlobalConfig.fontColor2),
                         )),
                   );
                 })),
@@ -148,7 +147,7 @@ class _SearchPageState extends State<SearchPage> {
                           '$index上海发布房产新政',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(color: GlobalConfig.secondFontColor),
+                          style: TextStyle(color: GlobalConfig.fontColor2),
                         ) : Row(
                           children: [
                             Expanded(
@@ -156,7 +155,7 @@ class _SearchPageState extends State<SearchPage> {
                                 '$index安徽居民楼坍塌事故有新进展',
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: GlobalConfig.secondFontColor),
+                                style: TextStyle(color: GlobalConfig.fontColor2),
                               ),
                             ),
                             const Text('热', style: TextStyle(color: Colors.red),)
@@ -222,7 +221,7 @@ class _SearchPageState extends State<SearchPage> {
                               children: [
                                 Container(
                                   margin: const EdgeInsets.only(right: 10.0),
-                                  child: Text(hot.title, style: TextStyle(color: GlobalConfig.secondFontColor),)),
+                                  child: Text(hot.title, style: TextStyle(color: GlobalConfig.fontColor2),)),
                                 Text('${hot.hotNum}万', style: TextStyle(color: GlobalConfig.fontColor, fontSize: 12.0),),
                               ],
                             ),
